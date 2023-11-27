@@ -1,5 +1,5 @@
 import Equipo from "../components/Equipo"
-import AboutUs from "../components/aboutUs"
+import AboutUs from "../components/AboutUs"
 
 function Nosotros() {
   return (
