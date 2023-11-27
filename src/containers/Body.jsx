@@ -5,7 +5,7 @@ import Portfolio from '../components/Portfolio'
 import Produccion from '../components/Produccion'
 import Servicios from '../components/Servicios'
 import SocialProof from '../components/SocialProof'
-import Animaciones from '../components/animaciones'
+import Animaciones from '../components/Animaciones'
 import '../styles/body.css'
 
 function Body() {
