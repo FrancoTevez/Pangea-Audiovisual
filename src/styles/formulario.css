@@ -1,0 +1,215 @@
+.formContacto{
+    width: 508px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contFormulario{
+    margin-bottom: 115px;
+    margin-top: 43px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+input, textarea{
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 8px;
+    border: 1px solid var(--Gris, #444850);
+    background: var(--gris-transparente-8, rgba(68, 72, 80, 0.08));
+    color: var(--Azul, #4144B8);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+input{
+    height: 24px;
+}
+
+textarea{
+    min-height: 96px;
+    padding-bottom: 0;
+    resize: none;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+    background: var(--Lila, #BFC1E0);
+}
+
+.displayBorder{
+    background: var(--Lila, #BFC1E0);
+    border-bottom: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.inputPais::placeholder{
+    color: #4145b8d3;
+}
+
+label{
+    margin-top: 6px;
+    padding: 8px;
+    color: var(--Oscuro, #141538);
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+.tituloContacto{
+    color: var(--Oscuro, #141538);
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+
+.separadorContacto{
+    border-radius: 1px;
+    background: var(--Gris, #444850);
+    height: 1px;
+    width: 473px;
+    z-index: 10;
+    margin-bottom: 10px;
+}
+
+.contSeparador,.contInputEnviar{
+    display: flex;
+    justify-content: center;
+}
+
+.contSeparador{
+    position: absolute;
+    margin-left: 10px;
+    height: 1px;
+    width: 95%;
+}
+
+.textoPais, .TextoCampoOb{
+    color: var(--00-on-surface-high-emphasis, rgba(0, 0, 0, 0.87));
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.1px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 470px;
+}
+
+.divPaises{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.textoPais:hover{
+    background-color: rgba(234, 242, 255, 0.425);
+}
+
+.contPaises{
+    display: none;
+    height: 248px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    border: 1px solid var(--Gris, #444850);
+    border-top: 0px;
+    background: var(--Lila, #BFC1E0);
+    transform: translateY(-1px);
+}
+
+.displayPaises{
+    display: inline;
+}
+
+.inputEnviar{
+    justify-content: center;
+    padding: 0;
+    margin-top: 38px;
+    cursor: pointer;
+    width: 220px;
+    height: 36px;
+    font-family: Montserrat;
+    background-color: #D9BD4C;
+    border-radius: 18px;
+    border: solid 1px #141538;
+    box-shadow: 0px 6px 0px #141538;
+    color: var(--Oscuro, #141538);
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    transition: all .1s ease; 
+}
+
+.inputEnviar:active{
+    transform: translateY(6px);
+    background-color: #141538;
+    color: #BFC1E0;
+    box-shadow: none;
+}
+
+.obligatorio, .ContObligatorio{
+    border: 1px solid #B84440;
+}
+
+.ContObligatorio{
+    border-top: 0px;
+}
+
+.displayNone{
+    display: none;
+}
+
+.TextoCampoOb{
+    color: #B84440;
+    margin-left: 4px;
+    margin-top: 3px;
+    cursor: default;
+    padding-bottom: 0px;
+}
+
+.textoPais{
+    width: 95%;
+}
+
+@media (max-width: 1150px) {
+    .formContacto{
+        width: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contFormulario{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .formContacto{
+        width: 508px;
+    }
+}
+
+@media (max-width: 576px) {
+    .formContacto{
+        width: 100%;
+    }
+    .contFormulario{
+        max-width: 90%;
+    }
+}
+
+
+

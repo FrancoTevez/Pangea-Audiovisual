@@ -1,0 +1,40 @@
+.contSocialProof{
+    background-color: #EAEBED;
+    height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.contContSocialProof{
+    white-space: nowrap;
+    overflow: hidden;
+    height: 110px;
+}
+
+@media (max-width: 768px) {
+    .contContSocialProof{
+        display: flex;
+    }
+
+    @keyframes slide {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+    
+    .contSocialProof{
+        animation: 12s slide infinite linear;
+        flex-wrap: nowrap;
+    }
+
+    .imgSocialProof{
+        padding: 0px 30px;
+    }
+
+}

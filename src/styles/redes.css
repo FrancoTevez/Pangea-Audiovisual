@@ -1,0 +1,26 @@
+.contLineaRedes{
+    display: flex;
+    justify-content: center;
+}
+
+.lineaRedes{
+    margin-top: 40px;
+    height: 1px;
+    width: 100%;
+    border-radius: 1px;
+    background: #4144B8;
+}
+
+.contRedes{
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    margin-top: 19px;
+    margin-bottom: 26px;
+}
+
+@media (max-width: 880px) {
+    .lineaRedes{
+        width: 90%;
+    }
+}

@@ -1,0 +1,63 @@
+.contUbiContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 540px;
+    margin-right: 20px;
+    margin-top: 45px;
+}
+
+.contTextUbi, .contTextUbi2{
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contRedesUbi, .contRedesUbi2{
+    width: 466px;
+}
+
+.contRedesUbi2, .contTextUbi2{
+    display: none;
+}
+
+.pUbi{
+    color: var(--00-on-surface-high-emphasis, rgba(0, 0, 0, 0.87));
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+}
+
+@media (max-width: 1150px) {
+    .contUbiContacto{
+        width: 362px;
+    }
+    .imgContacto{
+        width: 307px;
+    }
+    .contRedesUbi{
+        width: 307px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contUbiContacto{
+        display: none;
+    }
+    .contRedesUbi2{
+        display: block;
+    }
+    .contTextUbi2{
+        display: flex;
+    }
+}
+
+@media (max-width: 576px) {
+    .contRedesUbi2{
+        width: 96vw;
+    }
+}

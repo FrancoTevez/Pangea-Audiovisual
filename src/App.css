@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue Pro", sans-serif;
+  }
+
+.contenedores{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.displayNoneAll{
+  display: none;
+}
+
+.vectorAzulDesk{
+  display: block;
+}
+
+.vectorAzulMobile{
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .vectorAzulDesk{
+    display: none;
+  }
+  .vectorAzulMobile{
+    display: block;
+  }
+}

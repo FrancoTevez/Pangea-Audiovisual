@@ -1,0 +1,446 @@
+.contPortfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #141538;
+}
+
+.vecAbajoPortDesk{
+    transform: translateY(2px);
+}
+
+.vecPortUpDesk{
+    display: block;
+    width: 100%;
+}
+
+.vecAbajoPort{
+    transform: translateY(10px);
+    width: 100%;
+}
+
+.contTodosLosVideos{
+    display: flex;
+    gap: 44px;
+    height: 1403px;
+    margin-bottom: 80px;
+}
+
+.tituloPortfolio{
+    color: #EAEBED;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 40px;
+    margin-bottom: 113px;
+}
+
+.vidHor{
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(15, 17, 61, 0.00) 0%, #0F113D 100%);
+    width: 680px;
+    height: 380px;
+    z-index: -1;
+}
+
+.sombraVidOp{
+    opacity: 0;
+}
+
+.cTDOp{
+    margin-top: 70px;
+}
+
+.tituloVid{
+    margin-left: 20px;
+    color:#EAEBED;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.25px;
+}
+
+.parrafoVid{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #EAEBED;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+}
+
+.vidVer{
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(15, 17, 61, 0.00) 0%, #0F113D 100%);
+    width: 318px;
+    height: 569px;
+    z-index: -1;
+}
+
+.vidCua{
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(15, 17, 61, 0.00) 0%, #0F113D 100%);
+    width: 380px;
+    height: 380px;
+    z-index: -1;
+}
+
+.sombraVid, .sombraVidVer, .sombraVidCua{
+    position: absolute;
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(15, 17, 61, 0.00) 0%, #0F113D 100%);
+    z-index: 1;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.sombraVidCua{
+    width: 380px;
+    height: 382px;
+}
+
+.sombraVid, .contTituloDiv{
+    width: 680px;
+    height: 381px;
+}
+
+.contTituloDivVer{
+    width: 318px;
+    height: 569px;
+}
+
+.contTituloDivCua{
+    width: 380px;
+    height: 380px;
+}
+
+.sombraVidVer{
+    width: 318px;
+    height: 571px;
+}
+
+.contTituloDiv, .contTituloDivVer, .contTituloDivCua{
+    transition: all 0.3s ease;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    z-index: 10;
+}
+
+.contSvg, .contSvgVer, .contSvgCua{
+    position: absolute;
+    z-index: 11;
+}
+
+.contSvg{
+    margin-left: 640px;
+    margin-top: 340px;
+}
+
+.contSvgVer{
+    margin-left: 278px;
+    margin-top: 529px;
+}
+
+.contSvgCua{
+    margin-left: 340px;
+    margin-top: 340px;
+}
+
+.contVideosPort{
+    width: 680px;
+    display: flex;
+    flex-direction: row;
+    gap: 44px;
+    flex-wrap: wrap;
+    align-self: baseline;
+    padding-bottom: 130px;
+}
+
+.contVideoHor{
+    width: 680px;
+    height: 380px;
+    transition: all 0.3s ease;
+}
+
+.contVideoVer{
+    width: 318px;
+    transition: all 0.3s ease;
+}
+
+.contVideoCua{
+    width: 380px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contVideoPort2{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.margin20{
+    margin-bottom: 20px;
+}
+
+.vectorServicios{
+    transform: translateY(3px);
+}
+
+.vectorPortfolioCont{
+    transform: translateY(-3px)
+}
+
+.svgPortfolioLink{
+    padding: 3px;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.svgPortfolioLink:hover{
+    background-color: #141538;
+}
+
+.contTodosLosVideos2{
+    display: none;
+}
+
+.vecPortUpMob{
+    display: none;
+}
+
+@media (max-width: 1150px) {
+    .contTodosLosVideos{
+        gap: 38px;
+        height: 830px;
+    }
+    .contVideoHor{
+        width: 422px;
+        height: 236px;
+    }
+    .sombraVid{
+        width: 422px;
+        height: 237px;
+    }
+    .contSvg{
+        margin-left: 385px;
+        margin-top: 200px;
+    }
+    .contTituloDiv{
+        width: 422px;
+        height: 236px;
+    }
+    .vidHor{
+        width: 422px;
+        height: 236px;
+    }
+    .contVideoVer{
+        width: 192px;
+    }
+    .sombraVidVer{
+        width: 192px;
+        height: 347px;
+    }
+    .contSvgVer{
+        margin-left: 158px;
+        margin-top: 309px;
+    }
+    .contTituloDivVer{
+        width: 192px;
+        height: 345px;
+    }
+    .tituloVid{
+        margin-left: 14px;
+        font-size: 14px;
+    }
+    .parrafoVid{
+        margin-left: 14px;
+        margin-bottom: 14px;
+        font-size: 14px;
+    }
+    .contVideosPort{
+        width: 422px;
+        gap: 38px;
+    }
+    .vidVer{
+        width: 192px;
+        height: 346px;
+    }
+    .contVideoPort2{
+        gap: 38px;
+    }
+    .contVideoCua{
+        width: 232px;
+    }
+    .sombraVidCua{
+        width: 232px;
+        height: 234px;
+    }
+    .contTituloDivCua{
+        width: 232px;
+        height: 232px;
+    }
+    .contSvgCua{
+        margin-left: 196px;
+        margin-top: 197px;
+    }
+    .vidCua{
+        width: 232px;
+        height: 232px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contTodosLosVideos{
+        gap: 8px;
+    }
+    .contVideosPort{
+        width: 392px;
+        gap: 8px;
+    }
+    .contVideoHor{
+        width: 394px;
+        height: 222px;
+    }
+    .sombraVid{
+        width: 394px;
+        height: 223px;
+    }
+    .contTituloDiv{
+        width: 393px;
+        height: 222px;
+    }
+    .contSvg{
+        margin-left: 357px;
+        margin-top: 185px;
+    }
+    .vidHor{
+        width: 393px;
+        height: 222px;
+    }
+    .contVideoPort2{
+        gap: 8px;
+    }
+    .margin20{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 666px) {
+    .contTodosLosVideos{
+        display: none;
+    }
+    .contTodosLosVideos2{
+        height: 1265px;
+    }
+    .contTodosLosVideos2, .contVidMobile1, .contVidMobile2{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .contVideoMobile{
+        display: flex;
+        gap: 8px;
+    }
+    .contVideoHor{
+        width: 448px;
+        height: 251px;
+    }
+    .sombraVid{
+        width: 448px;
+        height: 252px;
+    }
+    .contTituloDiv{
+        width: 448px;
+        height: 251px;
+    }
+    .contSvg{
+        margin-left: 410px;
+        margin-top: 216px;
+    }
+    .vidHor{
+        width: 448px;
+        height: 251px;
+    }
+    .contVideoVer{
+        width: 220px;
+    }
+    .sombraVidVer{
+        width: 220px;
+        height: 394px;
+    }
+    .contTituloDivVer{
+        width: 220px;
+        height: 393px;
+    }
+    .contSvgVer{
+        margin-left: 183px;
+        margin-top: 356px;
+    }
+    .vidVer{
+        width: 220px;
+        height: 393px;
+    }
+    .contVideoCua{
+        width: 220px;
+    }
+    .sombraVidCua{
+        width: 220px;
+        height: 221px;
+    }
+    .contTituloDivCua{
+        width: 220px;
+        height: 220px;
+    }
+    .contSvgCua{
+        margin-left: 181px;
+        margin-top: 181px;
+    }
+    .vidCua{
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 474px) {
+    .contVideoHor{
+        width: 310px;
+        height: 175px;
+    }
+    .sombraVid{
+        width: 311px;
+        height: 176px;
+    }
+    .vidHor{
+        width: 310px;
+        height: 175px;
+    }
+    .contTituloDiv{
+        width: 310px;
+        height: 175px;
+    }
+    .contSvg{
+        margin-left: 272px;
+        margin-top: 138px;
+    }
+    .contVideoMobile{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contTodosLosVideos2{
+        height: 1735px;
+    }
+    .vecPortUpMob{
+        width: 100%;
+        display: block;
+        transform: translateY(10px);
+    }
+    .vecPortUpDesk{
+        display: none;
+    }
+}

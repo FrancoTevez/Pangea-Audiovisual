@@ -1,0 +1,18 @@
+.contFooter{
+    height: 55px;
+    background: var(--Oscuro, #141538);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spanFooter{
+    color: #EAEBED;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; 
+    letter-spacing: 0.4px;
+}

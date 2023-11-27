@@ -1,0 +1,162 @@
+.contProd, .contImgProd{
+    width: 840px;
+}
+
+.contProd{
+    margin-bottom: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contImgProd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divImgProd{
+    height: 340px;
+}
+
+.tituloProd{
+    width: 500px;
+    font-weight: 400;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color:#141538;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 26px; 
+    letter-spacing: 0.25px;
+}
+
+.parrafoProd{
+    color: #141538;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.4px;
+    margin-bottom: 20px;
+}
+
+.contAcordeones{
+    width: 307px;
+    padding: 6px 64px 6px 0px;
+}
+
+.contTituloAcor{
+    display: flex;
+    transform: translateX(-6px);
+}
+
+.tituloAcor{
+    margin-left: 5px;
+    color: #141538;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px; 
+    letter-spacing: 0.1px;
+}
+
+.pAcor{
+    opacity: 0;
+    margin-top: 12px;
+    color:#141538;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 113.333% */
+    letter-spacing: 0.4px; 
+    transition: all 0.4s ease;
+}
+
+.pAcorNone{
+    opacity: 1;
+}
+
+.contAcor{
+    margin-bottom: 12px;
+    height: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
+
+.display{
+    height: 250px;
+}
+
+.imgProd{
+    max-height: 280px;
+}
+
+.svgAcor{
+    transition: all .3s ease;
+}
+
+.rotarSvgAcor{
+    transform: rotate(180deg);
+}
+
+.cursiva{
+    font-style: italic;
+}
+
+@media (max-width: 890px) {
+    .contProd{
+        max-width: 90%;
+    }
+    .contImgProd{
+        max-width: 90%;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .contProd{
+        width: 95%;
+    }
+
+    .contImgProd{
+        width: 95%;
+        justify-content: center;
+    }
+    
+    .parrafoProd{
+        max-width: 356px;
+        padding: 0px 20px;
+    }
+
+    .contProd{
+        margin-bottom: 10px;
+    }
+    
+    .divImgProd{
+        display: none;
+    }
+
+    .contAcordeones{
+        width: 90%;
+        padding: 6px 25px 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tituloProd{
+        padding: 0px 25px;
+        width: auto;
+    }
+}
+

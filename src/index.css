@@ -1,0 +1,8 @@
+@font-face{
+  font-family: "Bebas Neue Pro";
+  src: url(./font/BebasNeueProBold.otf) format("opentype");
+}
+
+#root{
+  width: 100%;
+}
