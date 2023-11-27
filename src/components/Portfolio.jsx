@@ -17,6 +17,12 @@ function Portfolio() {
   const videoCua1Ref = useRef(null);
   const videoCua2Ref = useRef(null);
   const videoCua3Ref = useRef(null);
+  const videoHorRefMob = useRef(null);
+  const videoVer1RefMob = useRef(null);
+  const videoVer2RefMob = useRef(null);
+  const videoCua1RefMob = useRef(null);
+  const videoCua2RefMob = useRef(null);
+  const videoCua3RefMob = useRef(null);
   const [arribaHor, setArribaHor] = useState(false)
   const [arribaVer, setArribaVer] = useState(false)
   const [arribaVer2, setArribaVer2] = useState(false)
@@ -182,10 +188,10 @@ function Portfolio() {
         <div className='contTodosLosVideos2'>
             <div onMouseEnter={() => {
                 setArribaHor(true)
-                  videoHorRef.current.play()
+                  videoHorRefMob.current.play()
                     }} onMouseLeave={()=> {
                         setArribaHor(false)
-                        videoHorRef.current.pause()
+                        videoHorRefMob.current.pause()
                     }} className={arribaHor ? "contVideoHor margin20" : "contVideoHor"}>
                   <div className={arribaHor ? "sombraVid sombraVidOp" : "sombraVid"}></div>
                     <div className={arribaHor ? "contTituloDiv cTDOp" : "contTituloDiv"}>
@@ -199,7 +205,7 @@ function Portfolio() {
                     </svg>
                   </a>
                 </div>
-                <video loop muted className="vidHor" ref={videoHorRef}>
+                <video loop muted className="vidHor" ref={videoHorRefMob}>
                   <source src={videoHor} type="video/mp4" />
                 </video>
               </div>
@@ -207,10 +213,10 @@ function Portfolio() {
                   <div className='contVidMobile1'>
                       <div onMouseEnter={() => {
                         setArribaVer(true)
-                        videoVer1Ref.current.play()
+                        videoVer1RefMob.current.play()
                       }} onMouseLeave={()=> {
                       setArribaVer(false)
-                      videoVer1Ref.current.pause()
+                      videoVer1RefMob.current.pause()
                       }} className={arribaVer ? "contVideoVer margin20" : "contVideoVer"}>
                     <div className={arribaVer ? "sombraVidVer sombraVidOp" : "sombraVidVer"}></div>
                   <div className={arribaVer ? "contTituloDivVer cTDOp" : "contTituloDivVer"}>
@@ -224,16 +230,16 @@ function Portfolio() {
                   </svg>
                </a>
               </div>
-             <video loop muted className="vidVer" ref={videoVer1Ref}>
+             <video loop muted className="vidVer" ref={videoVer1RefMob}>
                 <source src={videoVer1} type="video/mp4" />
              </video>
             </div>
                     <div onMouseEnter={() => {
                setArribaCua3(true)
-               videoCua3Ref.current.play()
+               videoCua3RefMob.current.play()
                }} onMouseLeave={()=> {
                  setArribaCua3(false)
-                  videoCua3Ref.current.pause()
+                  videoCua3RefMob.current.pause()
                 }} className={arribaCua3 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua3 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua3 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
@@ -247,7 +253,7 @@ function Portfolio() {
                  </svg>
                 </a>
               </div>
-              <video loop muted className="vidCua" ref={videoCua3Ref}>
+              <video loop muted className="vidCua" ref={videoCua3RefMob}>
               <source src={videoCua3} type="video/mp4" />
              </video>
             </div>
@@ -255,10 +261,10 @@ function Portfolio() {
                   <div className='contVidMobile2'>
                     <div onMouseEnter={() => {
                setArribaCua1(true)
-               videoCua1Ref.current.play()
+               videoCua1RefMob.current.play()
                }} onMouseLeave={()=> {
                  setArribaCua1(false)
-                  videoCua1Ref.current.pause()
+                  videoCua1RefMob.current.pause()
                 }} className={arribaCua1 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua1 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua1 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
@@ -272,16 +278,16 @@ function Portfolio() {
                  </svg>
                 </a>
               </div>
-              <video loop muted className="vidCua" ref={videoCua1Ref}>
+              <video loop muted className="vidCua" ref={videoCua1RefMob}>
               <source src={videoCua1} type="video/mp4" />
              </video>
             </div>
                     <div onMouseEnter={() => {
                setArribaCua2(true)
-               videoCua2Ref.current.play()
+               videoCua2RefMob.current.play()
                }} onMouseLeave={()=> {
                  setArribaCua2(false)
-                  videoCua2Ref.current.pause()
+                  videoCua2RefMob.current.pause()
                 }} className={arribaCua2 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua2 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua2 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
@@ -295,16 +301,16 @@ function Portfolio() {
                  </svg>
                 </a>
               </div>
-              <video loop muted className="vidCua" ref={videoCua2Ref}>
+              <video loop muted className="vidCua" ref={videoCua2RefMob}>
               <source src={videoCua2} type="video/mp4" />
              </video>
             </div>
                     <div onMouseEnter={() => {
                setArribaVer2(true)
-               videoVer2Ref.current.play()
+               videoVer2RefMob.current.play()
                }} onMouseLeave={()=> {
                  setArribaVer2(false)
-                  videoVer2Ref.current.pause()
+                  videoVer2RefMob.current.pause()
                 }} className={arribaVer2 ? "contVideoVer margin20" : "contVideoVer"}>
              <div className={arribaVer2 ? "sombraVidVer sombraVidOp" : "sombraVidVer"}></div>
               <div className={arribaVer2 ? "contTituloDivVer cTDOp" : "contTituloDivVer"}>
@@ -318,7 +324,7 @@ function Portfolio() {
                  </svg>
                 </a>
               </div>
-              <video loop muted className="vidVer" ref={videoVer2Ref}>
+              <video loop muted className="vidVer" ref={videoVer2RefMob}>
               <source src={videoVer2} type="video/mp4" />
              </video>
             </div>
