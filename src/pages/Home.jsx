@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       AOS.init();
-      AOS.refresh(); 
+      AOS.refreshHard(); 
     }, 200);
   }, [location.pathname]);
 
