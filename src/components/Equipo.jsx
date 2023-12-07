@@ -6,7 +6,7 @@ function Equipo() {
     <section className='sectionEquipo'>
         <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}> 
             <h2 className="tituloEquipo">Equipo</h2>
-            <div style={{maxWidth: "840px"}}>
+            <div style={{maxWidth: "840px"}} data-aos="fade-up">
                 <div style={{display: "flex", justifyContent: "center", marginTop: "30px"}}>
                     <div className="contEquipo">
                         <div className='contNombreEquipo'>

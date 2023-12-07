@@ -14,8 +14,8 @@ function Body() {
         <Banners />
         <SocialProof />
         <Servicios />
+        <Animaciones />
         <Produccion />
-        <Animaciones /> 
         <Portfolio />
         <Contacto />
     </div>

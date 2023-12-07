@@ -8,7 +8,7 @@ function Contacto() {
   return (
     <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
         <h2 className="tituloContacto" id="contacto">Contacto</h2>
-        <div className="contFormulario">
+        <div className="contFormulario" data-aos="fade-up">
             <UbiContacto />
             <Formulario />
             <div className='contTextUbi2'>

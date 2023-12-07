@@ -31,11 +31,11 @@ function Portfolio() {
   const [arribaCua3, setArribaCua3] = useState(false)
 
   return (
-    <div className="contenedores" id='portfolio'>
+    <div className="contenedores" id='portfolio' >
       <VectorPortArriba />
-      <div className="contPortfolio">
+      <div className="contPortfolio" >
         <h2 className="tituloPortfolio">Portfolio</h2>
-        <div className='contTodosLosVideos'>
+        <div className='contTodosLosVideos' data-aos="fade-up">
           <div className='contVideosPort'>
             <div onMouseEnter={() => {
                 setArribaHor(true)

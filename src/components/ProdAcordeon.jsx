@@ -35,7 +35,7 @@ function ProdAcordeon() {
   }
  
   return (
-    <div className="contAcordeones">
+    <div className="contAcordeones" >
         {acordeonInfo.map((acor, i) => (
             <div key={i} onClick={() => handleClick(i)} className={acordeon == i+1 ? "contAcor display" : "contAcor"}>
                 <div className="contTituloAcor">

@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-import emailjs from '@emailjs/browser';
 import '../styles/formulario.css'
 import paises from "../paises.js"
 import { ToastContainer, toast } from 'react-toastify';
@@ -72,27 +71,19 @@ function Formulario() {
         });
     };
 
-    const notifyRE = () => {
-      toast('❗ Ha ocurrido un error inesperado, intente de nuevo...', {
-        position: "top-right",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: false,
-        draggable: true,
-        progress: undefined,
-        theme: "colored",
-        });
-    };
-
     const sendEmail = (e) => {
       e.preventDefault();
       if(mailRef.current.value != "" && nombreRef.current.value != "" && nosotrosRef.current.value != "" && paisRef.current.value != ""){
+        const formEle = document.querySelector(".formContacto");
+        const formData = new FormData(formEle)
+        fetch("https://script.google.com/macros/s/AKfycbzJb4IvUSSLS2u9cXPCw04ZZ_czQYGdDzl2t9Vun6aVT3iYW6aioKhfLSUcJLawlvt3/exec", {
+          method: "POST",
+          body: formData
+        })
         setYaEnvio(0)
-        emailjs.sendForm('service_ku5mfjs', 'template_19b6r2h', form.current, 'LwUBmjXvHap4TpWw1')
-        .then(() => {
           notifyS()
           textAreaRef.current.value = ""
+          setVal("")
           empresaRef.current.value = ""
           nosotrosRef.current.value = ""
           mailRef.current.value = ""
@@ -104,9 +95,6 @@ function Formulario() {
             nosotros:"",
             pais: ""
           })
-        }, () => {
-            notifyRE()
-        });
       }else{
         setYaEnvio(1)
       }

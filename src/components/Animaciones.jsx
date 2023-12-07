@@ -3,10 +3,10 @@ import '../styles/animaciones.css'
 
 function Animaciones() {
   return (
-    <section className="contenedores">
+    <section className="contenedores" >
         <h2 className="tituloProd">¿Qué podes hacer con la animación motion graphics? Básicamente todo:</h2>
-        <div className="contenedores">
-            <div className="contVideos">
+        <div className="contenedores" data-aos="fade-up">
+            <div className="contVideos" >
                 {videos.map((video, i) => (
                     <article key={i}>
                         <video autoPlay muted loop className="videoAnim">
