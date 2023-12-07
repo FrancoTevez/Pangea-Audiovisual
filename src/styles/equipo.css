@@ -45,9 +45,33 @@
     letter-spacing: 0.4px;
 }
 
+.spanEquipo{
+    font-weight: 600;
+}
+
+.pEquipo{
+    margin: 0px 7px;
+}
+
+.fotoRetrato{
+    max-width: 265px;
+}
+
+@media (max-width: 768px) {
+    .fotoRetrato{
+        max-width: 240px;
+    }
+}
+
 @media (max-width: 576px) {
     .contEquipo{
         flex-direction: column;
+    }
+    .fotoRetrato{
+        max-width: 220px;
+    }
+    .pEquipo{
+        margin: 0;
     }
 }
 

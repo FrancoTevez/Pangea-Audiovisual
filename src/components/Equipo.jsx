@@ -1,5 +1,7 @@
 import '../styles/equipo.css'
 import Redes from './Redes'
+import fotoCabeza from "../assets/cabezaWeb.jpg"
+import fotoBainson from "../assets/bainsonWeb.jpg"
 
 function Equipo() {
   return (
@@ -11,11 +13,13 @@ function Equipo() {
                     <div className="contEquipo">
                         <div className='contNombreEquipo'>
                             <h3 className='NombreEquipo'>Matías Armada</h3>
+                            <img src={fotoCabeza} className='fotoRetrato' alt="Imagen retrato de Matías Armada" />
                             <span className='spanEquipo'>Co-founder. CCO y COO.</span>
                             <p className='pEquipo'>Es la mente brillante que con su criterio asertivo y filoso, permanece en constante comunicación con el exterior para identificar los problemas que es necesario resolver en los clientes que confían en nosotros y transformarlos en soluciones creativas y eficientes.</p>
                         </div>
                         <div className='contNombreEquipo'>
                             <h3 className='NombreEquipo'>Pablo Sambataro</h3>
+                            <img src={fotoBainson} className='fotoRetrato' alt="Imagen retrato de Pablo Sambataro" />
                             <span className='spanEquipo'>Co-founder. CEO.</span>
                             <p className='pEquipo'>Con un ojo meticuloso para los detalles y un compromiso con la excelencia es quien se encarga de llevar esas soluciones al mundo creativo del diseño, la narrativa, la animación y el video. Su misión es dejar una huella duradera en la mente y corazones de las audiencias correspondientes que vean dichas piezas audiovisuales.</p>
                         </div>  

@@ -14,11 +14,5 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-
-      document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()))
-      document.querySelectorAll("video").forEach((video) => video.addEventListener("load", () => AOS.refresh()))
-    </script>
   </body>
 </html>
