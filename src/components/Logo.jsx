@@ -5,6 +5,9 @@ import '../styles/navbar.css'
 function Logo() {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
+    setTimeout(() => {
+      window.location.reload();
+    }, 150);
   };
 
   return (
