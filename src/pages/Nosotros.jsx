@@ -8,7 +8,6 @@ function Nosotros() {
       <AboutUs />
       <Equipo />
     </div>
-    
   )
 }
 
