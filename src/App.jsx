@@ -14,6 +14,9 @@ function App() {
   useEffect(() => {
     const handleLoadedData = () => {
       setVideoCargado(true);
+      if (videoRef.current) {
+        videoRef.current.play().catch(error => console.error('Error al iniciar la reproducción:', error));
+      }
     };
 
     if (videoRef.current) {
@@ -24,7 +27,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className={videoCargado ? "fondoBlanco logoIntro" : "fondoBlanco"}>
-        <video src={videoLogo} ref={videoRef} className={videoCargado ? "videoIntroPangea" : "displayNoneAll"} autoPlay muted></video>
+        <video src={videoLogo} ref={videoRef} className={videoCargado ? "videoIntroPangea" : "displayNoneAll"} muted></video>
       </div>
       <Navbar />
       <Routes>

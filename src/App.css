@@ -45,7 +45,6 @@
 
 @keyframes fadeOutVideo {
   from {
-    opacity: 1;
   }
   to {
     display: none;
