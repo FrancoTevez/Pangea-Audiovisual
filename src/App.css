@@ -22,7 +22,7 @@
   display: none;
 }
 
-.logoIntro{
+.fondoBlanco{
   position: fixed;
   z-index: 200;
   background-color: #EAEBED;
@@ -32,10 +32,14 @@
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+}
+
+.logoIntro{
   animation: fadeOutIntro 1.3s ease-out forwards;
 }
 
 .videoIntroPangea{
+  display: block;
   animation: fadeOutVideo 1.3s ease-out forwards;
 }
 
