@@ -13,14 +13,18 @@ function App() {
 
   useEffect(() => {
     const handleLoadedData = () => {
-      setVideoCargado(true);
       if (videoRef.current) {
         videoRef.current.play().catch(error => console.error('Error al iniciar la reproducción:', error));
       }
     };
 
+    const handleVideoPlay = () => {
+      setVideoCargado(true);
+    };
+
     if (videoRef.current) {
       videoRef.current.addEventListener('loadeddata', handleLoadedData);
+      videoRef.current.addEventListener('play', handleVideoPlay);
     }
   }, []);
 
