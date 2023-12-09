@@ -1,7 +1,7 @@
 header{
     width: 100vw;
     background-color: #141538;
-    height: 64px;
+    height: 54px;
     display: flex;
     align-items: center;
     position: fixed;
@@ -47,7 +47,7 @@ li a{
     color: var(--Blanco, #EAEBED);
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Bebas Neue Pro;
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; 
@@ -80,9 +80,9 @@ li a{
 
 .linksHeader:hover::after{
     content: "";
-    width: 83px;
+    width: 80px;
     position: absolute;
-    bottom: 15px; 
+    bottom: 13px; 
     display: block;
     animation: aparecer 0.2s ease;
 }
@@ -104,7 +104,7 @@ li a{
 .linkHCont{
     position: relative;
     color: #EAEBED;
-    padding: 3px 14px 8px;
+    padding: 3px 14px 6px;
     border-radius: 20px;
     border: 1px solid var(--Blanco, #EAEBED);
     margin-top: 5px;

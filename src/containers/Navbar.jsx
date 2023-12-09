@@ -5,6 +5,7 @@ import { Link } from 'react-scroll'
 import NavBurger from './NavBurger'
 
 function Navbar() {
+
   return (
     <header>
         <nav className='navDesk'>

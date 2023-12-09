@@ -11,7 +11,7 @@ function Home() {
     setTimeout(() => {
       AOS.init();
       document.querySelectorAll("img").forEach((img) => img.addEventListener("load", () => AOS.refresh()))
-      document.querySelectorAll("video").forEach((video) => video.addEventListener("load", () => AOS.refresh()))
+      document.querySelectorAll("video").forEach((video) => video.addEventListener("loadeddata", () => AOS.refresh()))
     }, 1000);
   }, [location.pathname]);
 

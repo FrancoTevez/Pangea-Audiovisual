@@ -38,7 +38,7 @@ function Banners() {
     }, []);
   
     return (
-      <div style={{marginTop: "64px", position: "relative"}}>
+      <div style={{marginTop: "54px", position: "relative"}}>
         <video ref={videoRef} autoPlay loop muted style={{width: "100%"}}>
           Tu navegador no soporta video.
         </video>
