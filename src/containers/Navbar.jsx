@@ -5,16 +5,10 @@ import { Link } from 'react-scroll'
 import {Link as LinkRouter} from "react-router-dom"
 import NavBurger from './NavBurger'
 import { useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 
 function Navbar() {
     const location = useLocation();
-    const [pag, setPag] = useState("")
-
-    useEffect(() => {
-        const rutaActual = location.pathname;
-        setPag(rutaActual)
-      }, [location.pathname]);
+    const pag = location.pathname;
 
       const scrollToSection = (section) => {
         setTimeout(() => {
