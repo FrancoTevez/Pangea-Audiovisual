@@ -5,9 +5,26 @@ import Logo from "../components/Logo"
 import Redes from "../components/Redes"
 import { useState } from "react"
 import LinkInicio from "../components/LinkInicio"
+import {Link as LinkRouter} from "react-router-dom"
+import { useLocation } from "react-router-dom"
 
 function NavBurger() {
     const [cerrAb, setCerrAb] = useState("cerrado")
+    const location = useLocation();
+    const pag = location.pathname;
+
+    const scrollToSection = (section) => {
+        setCerrAb("cerrado")
+        setTimeout(() => {
+            const element = document.getElementById(section);
+            console.log(element);
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: "start",
+                inline: 'start'
+            }); 
+        }, 300);
+      };
     
   return (
     <div style={{width: "100%"}} className="ContburgerNav bannerMover">
@@ -41,13 +58,13 @@ function NavBurger() {
                     <LinkNosotros />
                 </li>
                 <li>
-                    <Link className='linksHeader' to='servicios' smooth={true} offset={-50} duration={700} onClick={()=> setCerrAb("cerrado")}>Servicios</Link>
+                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("servicios")} className='linksHeader' to='/' >Servicios</LinkRouter> : <Link className='linksHeader' to='servicios' smooth={true} offset={-50} duration={700} onClick={()=> setCerrAb("cerrado")}>Servicios</Link>}
                 </li>
                 <li>
-                    <Link className='linksHeader' to='portfolio' smooth={true} offset={-20} duration={700} onClick={()=> setCerrAb("cerrado")}>Portfolio</Link>
+                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("portfolio")} className='linksHeader' to='/' >Portfolio</LinkRouter> : <Link className='linksHeader' to='portfolio' smooth={true} offset={-20} duration={700} onClick={()=> setCerrAb("cerrado")}>Portfolio</Link>}
                 </li>
                 <li>
-                    <Link className='linkHCont' to='contacto' smooth={true} offset={-113} duration={700} onClick={()=> setCerrAb("cerrado")}>Contacto</Link>
+                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("contacto")} className='linkHCont' to='/' >Contacto</LinkRouter> : <Link className='linkHCont' to='contacto' smooth={true} offset={-113} duration={700} onClick={()=> setCerrAb("cerrado")}>Contacto</Link>}
                 </li>
             </ul>
             <div className="contRedesBurger">
