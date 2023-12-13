@@ -47,14 +47,34 @@
     transform-origin: center;
 }
 
+.tituloPrincipal{
+    margin-bottom: 0;
+    max-width: 920px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width: 992px) {
+    .tituloPrincipal{
+        font-size: 30px;
+    }
+}
+
 @media (max-width: 768px) {
     .contServicios{
         top: 1px;
+    }
+    .contServicios{
+        min-height: 380px;
     }
 }
 
 @media (max-width: 576px) {
     .contServicios{
         padding-bottom: 30px;
+    }
+    .tituloPrincipal{
+        font-size: 27px;
     }
 }

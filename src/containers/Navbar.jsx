@@ -7,7 +7,7 @@ import NavBurger from './NavBurger'
 function Navbar() {
 
   return (
-    <header>
+    <header className='bannerMover'>
         <nav className='navDesk'>
             <ul>
                 <li>

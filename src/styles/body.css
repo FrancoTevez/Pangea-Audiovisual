@@ -50,4 +50,10 @@ body{
     50% {
       transform: translateY(20px); 
     }
-  }
+}
+
+@media (max-width: 576px) {
+    .btnBanner{
+        transform: scale(.8);
+    }
+}

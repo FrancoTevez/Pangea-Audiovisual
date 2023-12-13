@@ -10,7 +10,7 @@ function NavBurger() {
     const [cerrAb, setCerrAb] = useState("cerrado")
     
   return (
-    <div style={{width: "100%"}} className="ContburgerNav">
+    <div style={{width: "100%"}} className="ContburgerNav bannerMover">
         <div className="contLogoBurger">
             <Logo />
             <button type="button" className="butonSvg" onClick={()=> setCerrAb("abierto")}>
