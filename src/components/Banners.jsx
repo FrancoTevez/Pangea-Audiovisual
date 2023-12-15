@@ -38,8 +38,8 @@ function Banners() {
     }, []);
   
     return (
-      <div style={{marginTop: "54px", position: "relative"}}>
-        <video ref={videoRef} autoPlay loop muted style={{width: "100%"}}>
+      <div style={{marginTop: "54px", position: "relative", width:"100vw"}}>
+        <video ref={videoRef} autoPlay loop muted style={{width: "100vw", objectFit: "cover"}}>
           Tu navegador no soporta video.
         </video>
         <div className="contBtnContacto">
