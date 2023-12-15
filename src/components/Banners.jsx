@@ -23,6 +23,7 @@ function Banners() {
         }
 
         if (newSource !== video.src) {
+          console.log("hola");
           video.src = newSource;
           video.load();
         } 
@@ -38,8 +39,8 @@ function Banners() {
     }, []);
   
     return (
-      <div style={{marginTop: "54px", position: "relative", width:"100vw"}}>
-        <video ref={videoRef} autoPlay loop muted style={{width: "100vw", objectFit: "cover"}}>
+      <div style={{marginTop: "54px", position: "relative", width:"100%"}}>
+        <video ref={videoRef} autoPlay loop muted style={{width: "100%", objectFit: "cover", height: "auto"}}>
           Tu navegador no soporta video.
         </video>
         <div className="contBtnContacto">
