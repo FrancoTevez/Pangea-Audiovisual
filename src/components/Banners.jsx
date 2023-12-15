@@ -23,9 +23,7 @@ function Banners() {
         }
 
         if (newSource !== video.src) {
-          console.log("hola");
           video.src = newSource;
-          video.load();
         } 
       };
   
