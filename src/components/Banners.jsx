@@ -12,16 +12,20 @@ function Banners() {
   
       const updateSource = () => {
         const screenWidth = window.innerWidth;
-  
+        let newSource = '';
+
         if (screenWidth <= 576) {
-          video.src = bannerMobile;
+          newSource = bannerMobile;
         } else if (screenWidth <= 1024) {
-          video.src = bannerTablet;
+          newSource = bannerTablet;
         } else {
-          video.src = bannerDesk;
+          newSource = bannerDesk;
         }
-  
-        video.load(); // Recargar el video con la nueva fuente
+
+        if (newSource !== video.src) {
+          video.src = newSource;
+          video.load();
+        } 
       };
   
       updateSource();
