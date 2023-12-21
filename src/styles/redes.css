@@ -19,8 +19,22 @@
     margin-bottom: 26px;
 }
 
+.contRedes a:hover{
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+}
+
+.contRedes a svg path:active{
+   transition: all 0.3s ease;
+   fill: #141538;
+}
+
 @media (max-width: 880px) {
     .lineaRedes{
         width: 90%;
     }
+
+    
+.contRedes a:hover{
+    filter: none;
+}
 }
