@@ -22,18 +22,18 @@ li{
 }
 
 .bannerMover{
-    animation: mov 1.25s ease-in-out forwards;
+    animation: mov 1.55s ease-in-out forwards;
 }
 
 @keyframes mov {
     0% {
-      transform: translateY(-54px);
+      margin-bottom: 104px;
     }
-    90% {
-      transform: translateY(-54px); /* Desplazamiento a la mitad del contenedor */
+    50% {
+        margin-bottom: 104px; /* Desplazamiento a la mitad del contenedor */
     }
     100% {
-      transform: translateY(0); /* Desplazamiento completo */
+        margin-bottom: 0; /* Desplazamiento completo */
     }
   }
 

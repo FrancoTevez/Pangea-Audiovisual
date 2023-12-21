@@ -23,8 +23,8 @@ function Navbar() {
       };
 
   return (
-    <header className='bannerMover'>
-        <nav className='navDesk'>
+    <header>
+        <nav className='navDesk bannerMover'>
             <ul>
                 <li>
                     <Logo />

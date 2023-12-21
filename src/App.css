@@ -35,7 +35,7 @@
 }
 
 .logoIntro{
-  animation: fadeOutIntro 1.3s ease-out forwards;
+  animation: fadeOutIntro 1.5s ease-out forwards;
 }
 
 .videoIntroPangea{
@@ -52,7 +52,7 @@
 }
 
 @keyframes fadeOutIntro {
-  0%, 85% {
+  0%, 75% {
     opacity: 1;
   }
   100% {
