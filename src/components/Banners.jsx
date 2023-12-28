@@ -25,7 +25,7 @@ function Banners() {
         if (newSource !== video.src) {
           video.src = newSource;
           setTimeout(() => {
-            videoRef.current.play();
+            videoRef.current?.play();
           }, 1180);
         } 
       };

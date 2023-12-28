@@ -13,7 +13,6 @@ function Navbar() {
       const scrollToSection = (section) => {
         setTimeout(() => {
             const element = document.getElementById(section);
-            console.log(element);
             element.scrollIntoView({
                 behavior: 'smooth',
                 block: "start",

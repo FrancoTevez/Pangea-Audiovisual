@@ -1,6 +1,6 @@
 import Equipo from "../components/Equipo"
 import AboutUs from "../components/AboutUs"
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -8,8 +8,6 @@ import { Helmet } from "react-helmet-async";
 
 function Nosotros() {
   const location = useLocation();
-  const { pagina } = useParams();
-    console.log(pagina);
 
   useEffect(() => {
     setTimeout(() => {
