@@ -97,7 +97,7 @@ li a{
 
 .linksHeader:hover::after{
     content: "";
-    width: 80px;
+    width: 87px;
     position: absolute;
     bottom: 13px; 
     display: block;

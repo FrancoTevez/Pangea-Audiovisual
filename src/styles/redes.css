@@ -33,6 +33,10 @@
     height: 36px;
 }
 
+.contRed a{
+    height: 15px;
+}
+
 .svgRed:hover{
     width: 27px;
     height: 27px;

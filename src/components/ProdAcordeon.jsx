@@ -14,7 +14,7 @@ const acordeonInfo = [
         info: "Momento de la acción.",
         info2: "Todos nuestros talentos están en post de materializar la investigación previa y que el video cobre vida.",
         info3: "Cada proyecto es único, puede requerir diseño de sonido, o particular importancia en la música para reforzar el mensaje y el potencial del video.",
-        info4: "En caso que el proyecto lo requiera, desarrollar un guion y su correspondiente “storyboard.”"
+        info4: "En caso que el proyecto lo requiera, desarrollar un guión y su correspondiente “storyboard.”"
     },
     {
         title: "3. Calidad final del video.",

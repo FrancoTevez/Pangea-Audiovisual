@@ -44,7 +44,7 @@
 
 .contAcordeones{
     width: 307px;
-    min-height: 348px;
+    min-height: 352px;
     padding: 6px 64px 6px 0px;
 }
 
@@ -59,6 +59,7 @@
     font-size: 16px;
     line-height: 24px; 
     letter-spacing: 0.1px;
+    font-family: "Inter-Bold",sans-serif;
 }
 
 .pAcor{
@@ -81,7 +82,7 @@
 
 .contAcor{
     margin-bottom: 12px;
-    max-height: 20px;
+    max-height: 23px;
     overflow: hidden;
     transition: all 0.4s ease;
     cursor: pointer;

@@ -65,6 +65,7 @@ label{
 
 .tituloContacto{
     color: var(--Oscuro, #141538);
+    font-family: "Inter-Bold",sans-serif;
     text-align: center;
     font-size: 40px;
     font-weight: 700;
