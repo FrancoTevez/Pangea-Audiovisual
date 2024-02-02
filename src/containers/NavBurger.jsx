@@ -17,7 +17,6 @@ function NavBurger() {
         setCerrAb("cerrado")
         setTimeout(() => {
             const element = document.getElementById(section);
-            console.log(element);
             element.scrollIntoView({
                 behavior: 'smooth',
                 block: "start",
@@ -45,7 +44,7 @@ function NavBurger() {
                 </button>
             </div>
            
-            <div>
+            <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <img src={logoBurger} alt="logo de Pangea" className="imgLogoBurger"/>
                 <p className="pangeaBurger">PANGEA</p>
                 <p className="audiovisualBurger">audiovisual</p>
@@ -64,7 +63,7 @@ function NavBurger() {
                     {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("portfolio")} className='linksHeader' to='/' >Portfolio</LinkRouter> : <Link className='linksHeader' to='portfolio' smooth={true} offset={-20} duration={700} onClick={()=> setCerrAb("cerrado")}>Portfolio</Link>}
                 </li>
                 <li>
-                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("contacto")} className='linkHCont' to='/' >Contacto</LinkRouter> : <Link className='linkHCont' to='contacto' smooth={true} offset={-113} duration={700} onClick={()=> setCerrAb("cerrado")}>Contacto</Link>}
+                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("contacto")} className='linksHeader' to='/' >Contacto</LinkRouter> : <Link className='linksHeader' to='contacto' smooth={true} offset={-113} duration={700} onClick={()=> setCerrAb("cerrado")}>Contacto</Link>}
                 </li>
             </ul>
             <div className="contRedesBurger">

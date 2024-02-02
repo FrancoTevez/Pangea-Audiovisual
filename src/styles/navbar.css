@@ -3,6 +3,7 @@ header{
     background-color: #141538;
     height: 54px;
     display: flex;
+    justify-content: center;
     align-items: center;
     position: fixed;
     z-index: 100;
@@ -45,7 +46,7 @@ li{
 }
 
 .imgLogo:hover{
-    filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.40));
+    filter: drop-shadow(1px 2px 3px rgba(255, 255, 255, 0.40));
     transform: translateY(-4px);
     padding-bottom: 4px;
     border-radius: 20px;
@@ -62,8 +63,8 @@ li a{
     text-decoration: none;
     color: var(--Blanco, #EAEBED);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: Bebas Neue Pro;
-    font-size: 28px;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; 
@@ -212,6 +213,10 @@ li a{
         display: block;
     }
 
+    .linksHeader{
+        font-size: 23px;
+    }
+
     .linksHeader:active, .linkHCont:active{
         text-shadow: 0px 6px 8px rgba(255, 255, 255, 0.4), 6px 0px 8px rgba(255, 255, 255, 0.4);   
     }
@@ -265,7 +270,6 @@ li a{
         margin-top: 20px;
         color: var(--Blanco, #EAEBED);
         text-align: center;
-        font-family: Montserrat;
         font-size: 19px;
         font-weight: 500;
         line-height: 17px; 

@@ -4,7 +4,7 @@ import '../styles/animaciones.css'
 function Animaciones() {
   return (
     <section className="contenedores" >
-        <h2 className="tituloProd">¿Qué podes hacer con la animación motion graphics? Básicamente todo:</h2>
+        <h2 className="tituloProd">¿Qué podes hacer con la animación motion graphics?</h2>
         <div className="contenedores" data-aos="fade-up">
             <div className="contVideos" >
                 {videos.map((video, i) => (

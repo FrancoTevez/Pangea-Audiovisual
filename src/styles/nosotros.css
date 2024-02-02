@@ -1,6 +1,6 @@
 .contNosotros{
-    max-width: 840px;
-    min-height: 355px;
+    max-width: 807px;
+    min-height: 300px;
     display: flex;
     padding: 50px 64px 30px;
     flex-direction: column;
@@ -23,7 +23,6 @@
 
 .linkToServicios{
     color: #D9BD4C;
-    font-family: Montserrat;
     font-size: 15px;
     line-height: 17px; 
     letter-spacing: 0.4px;

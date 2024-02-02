@@ -26,20 +26,20 @@ function Navbar() {
         <nav className='navDesk bannerMover'>
             <ul>
                 <li>
-                    <Logo />
-                </li>
-                <li>
-                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("servicios")} className='linksHeader' to='/' >Servicios</LinkRouter> : <Link className='linksHeader' to='servicios' smooth={true} offset={-50} duration={700}>Servicios</Link>}
+                   {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("servicios")} className='linksHeader' to='/' >Servicios</LinkRouter> : <Link className='linksHeader' to='servicios' smooth={true} offset={-50} duration={700}>Servicios</Link>}
                 </li>
                 <li>
                     {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("portfolio")} className='linksHeader' to='/' >Portfolio</LinkRouter> : <Link className='linksHeader' to='portfolio' smooth={true} offset={-20} duration={700}>Portfolio</Link>}
+                </li>
+                <li>
+                     <Logo />
                 </li>
                 <li>
 
                     <LinkNosotros />
                 </li>
                 <li>
-                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("contacto")} className='linkHCont' to='/' >Contacto</LinkRouter> : <Link className='linkHCont' to='contacto' smooth={true} offset={-113} duration={700}>Contacto</Link>}
+                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("contacto")} className='linksHeader' to='/' >Contacto</LinkRouter> : <Link className='linksHeader' to='contacto' smooth={true} offset={-113} duration={700}>Contacto</Link>}
                 </li>
             </ul>
         </nav>

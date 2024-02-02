@@ -7,8 +7,6 @@ function Produccion() {
     <section className='contenedores' >
         <div className='contProd' >
             <h2 className="tituloProd">Proceso de Producción</h2>
-            <p className='parrafoProd' data-aos="fade-up">El contenido como formato de video está en todos lados y todo el tiempo, sin embargo saber utilizarlo es fundamental para cualquier campaña exitosa.</p>
-            <p className='parrafoProd' data-aos="fade-up">Esto nos permite trabajar estrechamente con el área de marketing para llegar hacia los resultados esperados.</p>
         </div>
         <div className='contImgProd' data-aos="fade-up">
             <div className='divImgProd'>

@@ -22,7 +22,6 @@ input, textarea{
     border: 1px solid var(--Gris, #444850);
     background: var(--gris-transparente-8, rgba(68, 72, 80, 0.08));
     color: var(--Azul, #4144B8);
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 500;
     line-height: 24px;
@@ -59,7 +58,6 @@ label{
     margin-top: 6px;
     padding: 8px;
     color: var(--Oscuro, #141538);
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.1px;
@@ -98,7 +96,6 @@ label{
 
 .textoPais, .TextoCampoOb{
     color: var(--00-on-surface-high-emphasis, rgba(0, 0, 0, 0.87));
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.1px;
@@ -143,15 +140,15 @@ label{
     cursor: pointer;
     width: 220px;
     height: 36px;
-    font-family: Montserrat;
     background-color: #D9BD4C;
     border-radius: 18px;
     border: solid 1px #141538;
     box-shadow: 0px 6px 0px #141538;
     color: var(--Oscuro, #141538);
-    font-weight: 500;
     letter-spacing: 1.25px;
     transition: all .1s ease; 
+    font-family: "Inter-Bold",sans-serif;
+    font-weight: 700;
 }
 
 .inputEnviar:active{

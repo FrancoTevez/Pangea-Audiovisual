@@ -18,7 +18,7 @@ export const videos = [
     },
     {
         vid: video3,
-        title: "Cierre de videos + CTA"
+        title: "Adaptación de Formatos"
     },
     {
         vid: video4,

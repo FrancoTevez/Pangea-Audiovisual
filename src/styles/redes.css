@@ -14,18 +14,59 @@
 .contRedes{
     display: flex;
     justify-content: center;
-    gap: 38px;
+    gap: 25px;
     margin-top: 19px;
     margin-bottom: 26px;
 }
 
-.contRedes a:hover{
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
+.svgBe, .svgRed{
+    transition: all 0.1s ease;
 }
 
-.contRedes a svg path:active{
-   transition: all 0.3s ease;
-   fill: #141538;
+.svgRed{
+    width: 22px;
+    height: 22px;
+}
+
+.svgBe{
+    width: 36px;
+    height: 36px;
+}
+
+.svgRed:hover{
+    width: 27px;
+    height: 27px;
+}
+
+.svgBe:hover{
+    width: 41px;
+    height: 41px;
+}
+
+.svgRed:active{
+    width: 22px;
+    height: 22px;
+}
+
+.svgBe:active{
+    fill: #141538;;
+    width: 36px;
+    height: 36px;
+}
+
+.svgBe:active path, .svgRed:active path{
+    fill: #141538;;
+}
+
+.svgRed path:active, .svgBe path:active{
+   transition: all 0.2s ease;
+}
+
+.contRed{
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
 }
 
 @media (max-width: 880px) {
@@ -33,8 +74,17 @@
         width: 90%;
     }
 
+    .svgRed:hover{
+        width: 22px;
+        height: 22px;
+    }
     
-.contRedes a:hover{
-    filter: none;
-}
+    .svgBe:hover{
+        width: 36px;
+        height: 36px;
+    }
+    
+    .contRedes a:hover{
+        filter: none;
+    }
 }

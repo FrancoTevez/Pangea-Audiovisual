@@ -8,6 +8,7 @@ body{
 .btnBanner{
     z-index: 50;
     margin-bottom: 80px;
+    font-weight: 700;
 }
 
 .contBtnContacto{
