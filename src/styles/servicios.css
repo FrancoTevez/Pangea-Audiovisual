@@ -21,13 +21,15 @@
 
 .contParrafos{
     padding: 0px 30px;
-    max-width: 840px;
+    margin-bottom: 20px;
+    max-width: 775px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .parrafoServicios{
+    max-width: 775px;
     color: var(--Blanco, #EAEBED);
     font-size: 15px;
     line-height: 17px; 
@@ -45,7 +47,7 @@
 }
 
 .tituloPrincipal{
-    max-width: 948px;
+    max-width: 500px;
     text-align: center;
     font-family: "Inter-Bold",sans-serif;
     margin-left: 20px;
@@ -61,9 +63,6 @@
 @media (max-width: 768px) {
     .contServicios{
         top: 1px;
-    }
-    .contServicios{
-        min-height: 380px;
     }
 }
 

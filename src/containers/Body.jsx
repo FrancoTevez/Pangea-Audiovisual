@@ -7,6 +7,7 @@ import Servicios from '../components/Servicios'
 import SocialProof from '../components/SocialProof'
 import Animaciones from '../components/Animaciones'
 import '../styles/body.css'
+import Nosotros from './Nosotros'
 
 function Body() {
   return (
@@ -18,6 +19,7 @@ function Body() {
         <Produccion />
         <Portfolio />
         <Contacto />
+        <Nosotros />
     </div>
   )
 }

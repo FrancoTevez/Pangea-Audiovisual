@@ -1,19 +1,19 @@
 import { Link } from "react-scroll"
-import LinkNosotros from "../components/LinkNosotros"
+//import LinkNosotros from "../components/LinkNosotros"
 import logoBurger from "../assets/logoPangeaBurger.png"
 import Logo from "../components/Logo"
 import Redes from "../components/Redes"
 import { useState } from "react"
 import LinkInicio from "../components/LinkInicio"
-import {Link as LinkRouter} from "react-router-dom"
-import { useLocation } from "react-router-dom"
+//import {Link as LinkRouter} from "react-router-dom"
+//import { useLocation } from "react-router-dom"
 
 function NavBurger() {
     const [cerrAb, setCerrAb] = useState("cerrado")
-    const location = useLocation();
-    const pag = location.pathname;
+    //const location = useLocation();
+    //const pag = location.pathname;
 
-    const scrollToSection = (section) => {
+    /*const scrollToSection = (section) => {
         setCerrAb("cerrado")
         setTimeout(() => {
             const element = document.getElementById(section);
@@ -23,7 +23,7 @@ function NavBurger() {
                 inline: 'start'
             }); 
         }, 300);
-      };
+      };*/
     
   return (
     <div style={{width: "100%"}} className="ContburgerNav bannerMover">
@@ -53,17 +53,17 @@ function NavBurger() {
                 <li onClick={()=> setCerrAb("cerrado")}>
                     <LinkInicio />
                 </li>
-                <li onClick={()=> setCerrAb("cerrado")}>
-                    <LinkNosotros />
+                <li>
+                    <Link className='linksHeader' to='Nosotros' smooth={true} offset={-50} duration={700} onClick={()=> setCerrAb("cerrado")}>Nosotros</Link>
                 </li>
                 <li>
-                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("servicios")} className='linksHeader' to='/' >Servicios</LinkRouter> : <Link className='linksHeader' to='servicios' smooth={true} offset={-50} duration={700} onClick={()=> setCerrAb("cerrado")}>Servicios</Link>}
+                    <Link className='linksHeader' to='servicios' smooth={true} offset={-50} duration={700} onClick={()=> setCerrAb("cerrado")}>Servicios</Link>
                 </li>
                 <li>
-                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("portfolio")} className='linksHeader' to='/' >Portfolio</LinkRouter> : <Link className='linksHeader' to='portfolio' smooth={true} offset={-20} duration={700} onClick={()=> setCerrAb("cerrado")}>Portfolio</Link>}
+                    <Link className='linksHeader' to='portfolio' smooth={true} offset={-20} duration={700} onClick={()=> setCerrAb("cerrado")}>Portfolio</Link>
                 </li>
                 <li>
-                    {pag == "/nosotros" ? <LinkRouter onClick={() => scrollToSection("contacto")} className='linksHeader' to='/' >Contacto</LinkRouter> : <Link className='linksHeader' to='contacto' smooth={true} offset={-113} duration={700} onClick={()=> setCerrAb("cerrado")}>Contacto</Link>}
+                    <Link className='linksHeader' to='contacto' smooth={true} offset={-113} duration={700} onClick={()=> setCerrAb("cerrado")}>Contacto</Link>
                 </li>
             </ul>
             <div className="contRedesBurger">

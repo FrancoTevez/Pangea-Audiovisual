@@ -40,7 +40,7 @@ function Banners() {
     }, []);
   
     return (
-      <div style={{marginTop: "54px", position: "relative", width:"100%"}}>
+      <div style={{marginTop: "54px", position: "relative", width:"100%"}} id="InicioLink">
         <video ref={videoRef} loop muted style={{width: "100%", objectFit: "cover", maxHeight: "744px"}}>
           Tu navegador no soporta video.
         </video>

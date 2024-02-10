@@ -18,7 +18,7 @@ function AboutUs() {
   return (
     <section className='SectionNosotros'>
         <div style={{display: "flex", justifyContent: "center", background: "#4144B8"}}>
-            <div className='contNosotros'>
+            <div className='contNosotros' data-aos="fade-up">
                 <h1 className='tituloNosotros'>Nosotros</h1>
                 <p className='parrafoServicios'>Nuestra satisfacción más grande es trabajar de tal manera que nuestros resultados superen cualquier expectativa.</p>
                 <p className='parrafoServicios'>Hemos logrado campañas exitosas mediante nuestros trabajos, en parte porque nos destacamos por la interpretación y buena comunicación con el cliente.</p>

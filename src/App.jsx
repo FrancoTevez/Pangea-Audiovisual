@@ -2,7 +2,6 @@ import './App.css'
 import Home from './pages/Home'
 import Navbar from './containers/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Nosotros from './pages/Nosotros'
 import Footer from './containers/Footer'
 import videoLogo from "./assets/logoVideoIntro.mp4"
 import { useEffect, useRef, useState } from 'react'
@@ -36,7 +35,6 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/nosotros' element={<Nosotros />}/>
       </Routes>
       <Footer />
     </BrowserRouter>
