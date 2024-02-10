@@ -47,16 +47,18 @@
 }
 
 .tituloPrincipal{
-    max-width: 500px;
+    max-width: 950px;
     text-align: center;
     font-family: "Inter-Bold",sans-serif;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 30px;
+    font-size: 21px;
 }
 
 @media (max-width: 992px) {
     .tituloPrincipal{
-        font-size: 26px;
+        font-size: 21px;
     }
 }
 
