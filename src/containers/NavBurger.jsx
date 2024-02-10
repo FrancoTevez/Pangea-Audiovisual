@@ -4,7 +4,6 @@ import logoBurger from "../assets/logoPangeaBurger.png"
 import Logo from "../components/Logo"
 import Redes from "../components/Redes"
 import { useState } from "react"
-import LinkInicio from "../components/LinkInicio"
 //import {Link as LinkRouter} from "react-router-dom"
 //import { useLocation } from "react-router-dom"
 
@@ -50,8 +49,8 @@ function NavBurger() {
                 <p className="audiovisualBurger">audiovisual</p>
             </div>
             <ul>
-                <li onClick={()=> setCerrAb("cerrado")}>
-                    <LinkInicio />
+                <li>
+                    <Link to="InicioLink" className='linksHeader' smooth={true} offset={-70} duration={700} onClick={()=> setCerrAb("cerrado")}>Inicio</Link>
                 </li>
                 <li>
                     <Link className='linksHeader' to='Nosotros' smooth={true} offset={-50} duration={700} onClick={()=> setCerrAb("cerrado")}>Nosotros</Link>
