@@ -40,12 +40,12 @@ function Banners() {
     }, []);
   
     return (
-      <div style={{marginTop: "54px", position: "relative", width:"100%", height: "744px", overflow: "hidden"}} id="InicioLink">
-        <video ref={videoRef} loop muted style={{objectFit: "cover"}}>
+      <div style={{marginTop: "54px", position: "relative", width:"100%", maxHeightt: "744px", overflow: "hidden", display: "flex", justifyContent: "center"}} id="InicioLink">
+        <video ref={videoRef} className="videoBannerLoop" loop muted style={{objectFit: "cover", width: "100%"}}>
           Tu navegador no soporta video.
         </video>
         <div className="contBtnContacto">
-          <Link to='contacto' smooth={true} offset={-113} duration={700}><button className="inputEnviar btnBanner">CONTÁCTANOS</button></Link>
+          <Link to='contacto' smooth={true} offset={-113} duration={700}><button className="btnBanner inputEnviar">CONTÁCTANOS</button></Link>
         </div>
         <div className="contArrowBanner">
           <Link style={{width: "30px", cursor: "pointer"}} to='servicios' smooth={true} offset={-173} duration={700}>
