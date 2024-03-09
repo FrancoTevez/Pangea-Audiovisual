@@ -150,6 +150,7 @@ label{
     transition: all .1s ease; 
     font-family: "Inter-Bold",sans-serif;
     font-weight: 700;
+    margin-bottom: 30px;
 }
 
 .inputEnviar:active{
@@ -205,6 +206,9 @@ label{
     .formContacto{
         width: 508px;
         margin-bottom: 0px;
+    }
+    .inputEnviar{
+        margin-bottom: 0;
     }
 }
 

@@ -3,9 +3,11 @@ import bannerTablet from "../assets/Banner_Tablet.mp4"
 import bannerMobile from "../assets/Banner_Mobile.mp4"
 import { useEffect, useRef } from "react";
 import { Link } from 'react-scroll'
+import { useSelector } from "react-redux";
 
 function Banners() {
     const videoRef = useRef(null);
+    const idioma = useSelector((state) => state.idioma);
   
     useEffect(() => {
       const video = videoRef.current;
@@ -45,7 +47,7 @@ function Banners() {
           Tu navegador no soporta video.
         </video>
         <div className="contBtnContacto">
-          <Link to='contacto' smooth={true} offset={-113} duration={700}><button className="btnBanner inputEnviar">CONTÁCTANOS</button></Link>
+          <Link to='contacto' smooth={true} offset={-113} duration={700}><button className="btnBanner inputEnviar">{idioma?.leng.botonContactar}</button></Link>
         </div>
         <div className="contArrowBanner">
           <Link style={{width: "30px", cursor: "pointer"}} to='servicios' smooth={true} offset={-173} duration={700}>

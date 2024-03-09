@@ -1,15 +1,17 @@
+import { useSelector } from 'react-redux';
 import '../styles/servicios.css'
 import VectorAzul from './VectorAzul'
 
 function Servicios() {
-
+  const idioma = useSelector((state) => state.idioma);
+  
   return (
     <section id='servicios'>
         <div className='contServicios' >
-            <h1 className='tituloServicios tituloPrincipal'>Motion Graphics y Edición de Video aplicado a estrategias de marketing</h1>
+            <h1 className='tituloPrincipal tituloServicios'>{idioma?.leng.tituloPrincipal}</h1>
             <div className='contParrafos' data-aos="fade-up">
-                <p className='parrafoServicios'>Hablamos el idioma del diseño, animación y video, pero lo que nos hace únicos es que sabemos conectarlo con el mundo del marketing y la publicidad.</p>
-                <p className='parrafoServicios'>Analizamos la necesidad de cada cliente para brindar soluciones reales a objetivos concretos y alcanzar resultados exitosos.</p>
+                <p className='parrafoServicios'>{idioma?.leng.texto1Servicio}</p>
+                <p className='parrafoServicios'>{idioma?.leng.texto2Servicio}</p>
             </div>
         </div>
         <VectorAzul />

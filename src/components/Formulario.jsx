@@ -3,8 +3,10 @@ import '../styles/formulario.css'
 //import paises from "../paises.js"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useSelector } from "react-redux";
 
 function Formulario() {
+    const idioma = useSelector((state) => state.idioma);
     const [yaEnvio, setYaEnvio] = useState(0);
     const form = useRef();
     const textAreaRef = useRef(null)
@@ -102,22 +104,22 @@ function Formulario() {
   
     return (
       <form ref={form} onSubmit={sendEmail} className="formContacto" >
-        <label htmlFor="nombre">Nombre completo *</label>
+        <label htmlFor="nombre">{idioma?.leng.inputNombre}</label>
         <input type="text" name="user_name" id="nombre" ref={nombreRef} className={`${yaEnvio == 1 ? campOb.user_name == "" ? "obligatorio" : undefined : undefined}`} onChange={(e) => handleOb(e)} />
-        <span className={`${yaEnvio == 1 ? campOb.user_name != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>Este campo es obligatorio.</span>
-        <label htmlFor="idMail">Mail *</label>
+        <span className={`${yaEnvio == 1 ? campOb.user_name != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>{idioma?.leng.textoObligatorio}</span>
+        <label htmlFor="idMail">{idioma?.leng.inputMail}</label>
         <input type="email" name="user_email" id="idMail" ref={mailRef} className={`${yaEnvio == 1 ? campOb.user_email == "" ? "obligatorio" : undefined : undefined}`} onChange={(e) => handleOb(e)} />
-        <span className={`${yaEnvio == 1 ? campOb.user_email != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>Este campo es obligatorio.</span>
-        <label htmlFor="idEmpresa">Empresa</label>
+        <span className={`${yaEnvio == 1 ? campOb.user_email != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>{idioma?.leng.textoObligatorio}</span>
+        <label htmlFor="idEmpresa">{idioma?.leng.inputEmpresa}</label>
         <input type="text" name="empresa" id="idEmpresa" ref={empresaRef} />
-        <label htmlFor="mensaje">Mensaje *</label>
+        <label htmlFor="mensaje">{idioma?.leng.inputMensaje}</label>
         <textarea id="mensaje" name="message" ref={textAreaRef} className={`${yaEnvio == 1 ? campOb.message == "" ? "obligatorio" : undefined : undefined}`} value={val} onChange={(e) => {
            handleChange(e)
            handleOb(e)
         }} />
-        <span className={`${yaEnvio == 1 ? campOb.message != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>Este campo es obligatorio.</span>
+        <span className={`${yaEnvio == 1 ? campOb.message != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>{idioma?.leng.textoObligatorio}</span>
         <div className="contInputEnviar">
-          <button type="submit" value="ENVIAR" className="inputEnviar">ENVIAR</button>
+          <button type="submit" value="ENVIAR" className="inputEnviar">{idioma?.leng.botonEnviar}</button>
         </div>
         <ToastContainer />
       </form>

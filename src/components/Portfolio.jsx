@@ -9,8 +9,10 @@ import { useRef } from 'react';
 import { useState } from 'react';
 import VectorPortArriba from './VectorPortArriba'
 import VectorPortAbajo from './VectorPortAbajo'
+import { useSelector } from 'react-redux'
 
 function Portfolio() {
+  const idioma = useSelector((state) => state.idioma);
   const videoHorRef = useRef(null);
   const videoVer1Ref = useRef(null);
   const videoVer2Ref = useRef(null);
@@ -31,10 +33,10 @@ function Portfolio() {
   const [arribaCua3, setArribaCua3] = useState(false)
 
   return (
-    <div className="contenedores" id='portfolio' >
+    <section className="contenedores" id='portfolio' >
       <VectorPortArriba />
       <div className="contPortfolio" >
-        <h2 className="tituloPortfolio">Portfolio</h2>
+        <h2 className="tituloPortfolio">{idioma?.leng.tituloPortfolio}</h2>
         <div className='contTodosLosVideos' data-aos="fade-up">
           <div className='contVideosPort'>
             <div onMouseEnter={() => {
@@ -46,8 +48,8 @@ function Portfolio() {
                }} className={arribaHor ? "contVideoHor margin20" : "contVideoHor"}>
               <div className={arribaHor ? "sombraVid sombraVidOp" : "sombraVid"}></div>
               <div className={arribaHor ? "contTituloDiv cTDOp" : "contTituloDiv"}>
-                <h2 className='tituloVid'>Asesores Municipales</h2>
-                <p className='parrafoVid'>Motion Graphics Descriptivo</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoHor}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoHor}</p>
               </div>
              <div className='contSvg'>
                <a href="https://www.behance.net/gallery/167008277/L-A-Estudio-Juridico-Motion-Graphics-Descriptivo" target='_blank' rel='noreferrer'>
@@ -70,8 +72,8 @@ function Portfolio() {
                 }} className={arribaVer ? "contVideoVer margin20" : "contVideoVer"}>
              <div className={arribaVer ? "sombraVidVer sombraVidOp" : "sombraVidVer"}></div>
              <div className={arribaVer ? "contTituloDivVer cTDOp" : "contTituloDivVer"}>
-                <h2 className='tituloVid'>Cara Loren</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoVer1}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoVer1}</p>
               </div>
               <div className='contSvgVer'>
                <a href="https://www.behance.net/gallery/163332893/Video-ADS-Publicitario-CARA-LOREN-ACTIVE-" target='_blank' rel='noreferrer'>
@@ -94,8 +96,8 @@ function Portfolio() {
                 }} className={arribaVer2 ? "contVideoVer margin20" : "contVideoVer"}>
              <div className={arribaVer2 ? "sombraVidVer sombraVidOp" : "sombraVidVer"}></div>
               <div className={arribaVer2 ? "contTituloDivVer cTDOp" : "contTituloDivVer"}>
-                <h2 className='tituloVid'>Cycle Town</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoVer2}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoVer2}</p>
               </div>
               <div className='contSvgVer'>
                 <a href="https://www.behance.net/gallery/154028419/Campanas-Publicitacias-en-Redes-Sociales-CycleTown" target='_blank' rel='noreferrer'>
@@ -121,8 +123,8 @@ function Portfolio() {
                 }} className={arribaCua1 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua1 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua1 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
-                <h2 className='tituloVid'>Evora</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoCua1}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoCua1}</p>
               </div>
               <div className='contSvgCua'>
                 <a href="https://www.behance.net/gallery/162950147/Video-Ads-Publicitario-de-EVORA" target='_blank' rel='noreferrer'>
@@ -145,8 +147,8 @@ function Portfolio() {
                 }} className={arribaCua2 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua2 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua2 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
-                <h2 className='tituloVid'>FLY Logística</h2>
-                <p className='parrafoVid'>Motion Graphics Descriptivo</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoCua2}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoCua2}</p>
               </div>
               <div className='contSvgCua'>
                 <a href="https://www.behance.net/gallery/153733819/Motion-Graphics-Explicativo-para-Flay-Logistica" target='_blank' rel='noreferrer'>
@@ -169,8 +171,8 @@ function Portfolio() {
                 }} className={arribaCua3 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua3 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua3 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
-                <h2 className='tituloVid'>High Fitness</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoCua3}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoCua3}</p>
               </div>
               <div className='contSvgCua'>
                 <a href="https://www.behance.net/gallery/155030981/Video-Ads-para-Redes-Sociales-de-HIGH-FITNESS" target='_blank' rel='noreferrer'>
@@ -195,8 +197,8 @@ function Portfolio() {
                     }} className={arribaHor ? "contVideoHor margin20" : "contVideoHor"}>
                   <div className={arribaHor ? "sombraVid sombraVidOp" : "sombraVid"}></div>
                     <div className={arribaHor ? "contTituloDiv cTDOp" : "contTituloDiv"}>
-                      <h2 className='tituloVid'>Asesores Municipales</h2>
-                      <p className='parrafoVid'>Motion Graphics Descriptivo</p>
+                      <h2 className='tituloVid'>{idioma?.leng.tituloVideoHor}</h2>
+                      <p className='parrafoVid'>{idioma?.leng.descVideoHor}</p>
                     </div>
                   <div className='contSvg'>
                   <a href="https://www.behance.net/gallery/167008277/L-A-Estudio-Juridico-Motion-Graphics-Descriptivo" target='_blank' rel='noreferrer'>
@@ -220,8 +222,8 @@ function Portfolio() {
                       }} className={arribaVer ? "contVideoVer margin20" : "contVideoVer"}>
                     <div className={arribaVer ? "sombraVidVer sombraVidOp" : "sombraVidVer"}></div>
                   <div className={arribaVer ? "contTituloDivVer cTDOp" : "contTituloDivVer"}>
-                    <h2 className='tituloVid'>Cara Loren</h2>
-                  <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                    <h2 className='tituloVid'>{idioma?.leng.tituloVideoVer1}</h2>
+                  <p className='parrafoVid'>{idioma?.leng.descVideoVer1}</p>
                   </div>
                   <div className='contSvgVer'>
                <a href="https://www.behance.net/gallery/163332893/Video-ADS-Publicitario-CARA-LOREN-ACTIVE-" target='_blank' rel='noreferrer'>
@@ -243,8 +245,8 @@ function Portfolio() {
                 }} className={arribaCua3 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua3 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua3 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
-                <h2 className='tituloVid'>High Fitness</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoCua3}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoCua3}</p>
               </div>
               <div className='contSvgCua'>
                 <a href="https://www.behance.net/gallery/155030981/Video-Ads-para-Redes-Sociales-de-HIGH-FITNESS" target='_blank' rel='noreferrer'>
@@ -268,8 +270,8 @@ function Portfolio() {
                 }} className={arribaCua1 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua1 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua1 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
-                <h2 className='tituloVid'>Evora</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoCua1}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoCua1}</p>
               </div>
               <div className='contSvgCua'>
                 <a href="https://www.behance.net/gallery/162950147/Video-Ads-Publicitario-de-EVORA" target='_blank' rel='noreferrer'>
@@ -291,8 +293,8 @@ function Portfolio() {
                 }} className={arribaCua2 ? "contVideoCua margin20" : "contVideoCua"}>
              <div className={arribaCua2 ? "sombraVidCua sombraVidOp" : "sombraVidCua"}></div>
               <div className={arribaCua2 ? "contTituloDivCua cTDOp" : "contTituloDivCua"}>
-                <h2 className='tituloVid'>FLY Logística</h2>
-                <p className='parrafoVid'>Motion Graphics Descriptivo</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoCua2}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoCua2}</p>
               </div>
               <div className='contSvgCua'>
                 <a href="https://www.behance.net/gallery/153733819/Motion-Graphics-Explicativo-para-Flay-Logistica" target='_blank' rel='noreferrer'>
@@ -314,8 +316,8 @@ function Portfolio() {
                 }} className={arribaVer2 ? "contVideoVer margin20" : "contVideoVer"}>
              <div className={arribaVer2 ? "sombraVidVer sombraVidOp" : "sombraVidVer"}></div>
               <div className={arribaVer2 ? "contTituloDivVer cTDOp" : "contTituloDivVer"}>
-                <h2 className='tituloVid'>Cycle Town</h2>
-                <p className='parrafoVid'>Videos Ads Publicitarios</p>
+                <h2 className='tituloVid'>{idioma?.leng.tituloVideoVer2}</h2>
+                <p className='parrafoVid'>{idioma?.leng.descVideoVer2}</p>
               </div>
               <div className='contSvgVer'>
                 <a href="https://www.behance.net/gallery/154028419/Campanas-Publicitacias-en-Redes-Sociales-CycleTown" target='_blank' rel='noreferrer'>
@@ -333,7 +335,7 @@ function Portfolio() {
         </div>
         <VectorPortAbajo />
       </div>
-    </div>
+    </section>
   );
 }
 

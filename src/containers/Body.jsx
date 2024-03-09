@@ -11,16 +11,18 @@ import Nosotros from './Nosotros'
 
 function Body() {
   return (
-    <div>
+    <>
         <Banners />
         <SocialProof />
-        <Servicios />
-        <Animaciones />
-        <Produccion />
+        <main>
+          <Servicios />
+          <Animaciones />
+          <Produccion />
+        </main>
         <Portfolio />
         <Contacto />
         <Nosotros />
-    </div>
+    </>
   )
 }
 

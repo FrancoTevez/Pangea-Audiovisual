@@ -1,32 +1,33 @@
 import { useState } from "react"
 import '../styles/prod.css'
-
-const acordeonInfo = [
-    {
-        title: "1. Primero, investigar.",
-        info: "Es fundamental investigar la personalidad de la marca, su esencia y la de sus competidores.",
-        info2: "Permite ser precisos en un mar de información: porque allana el camino y ofrece un terreno sólido sobre el cual avanzar firmemente.",
-        info3: "Reflejar esto en cada elemento del video es lo que al final le brinda contenido de valor y coherencia.",
-        info4: ""
-    },
-    {
-        title: "2. Producción, acción!",
-        info: "Momento de la acción.",
-        info2: "Todos nuestros talentos están en post de materializar la investigación previa y que el video cobre vida.",
-        info3: "Cada proyecto es único, puede requerir diseño de sonido, o particular importancia en la música para reforzar el mensaje y el potencial del video.",
-        info4: "En caso que el proyecto lo requiera, desarrollar un guión y su correspondiente “storyboard.”"
-    },
-    {
-        title: "3. Calidad final del video.",
-        info: "Está todo listo y es hora de revisar. De ver mil veces el video final para corregir cualquier error que tienda a ocultarse.",
-        info2: "En términos de productividad se traduce en eficiencia, porque ahorra tiempo en feedback y afila los detalles que bridan calidad.",
-        info3: "",
-        info4: ""
-    }
-]
-
+import { useSelector } from "react-redux";
 
 function ProdAcordeon() {
+    const idioma = useSelector((state) => state.idioma);
+    const acordeonInfo = [
+        {
+            title: idioma?.leng.procesoSubtitulo1,
+            info: idioma?.leng.procesoSub1Texto1,
+            info2: idioma?.leng.procesoSub1Texto2,
+            info3: idioma?.leng.procesoSub1Texto3,
+            info4: ""
+        },
+        {
+            title: idioma?.leng.procesoSubtitulo2,
+            info: idioma?.leng.procesoSub2Texto1,
+            info2: idioma?.leng.procesoSub2Texto2,
+            info3: idioma?.leng.procesoSub2Texto3,
+            info4: idioma?.leng.procesoSub2Texto4
+        },
+        {
+            title: idioma?.leng.procesoSubtitulo3,
+            info: idioma?.leng.procesoSub3Texto1,
+            info2: idioma?.leng.procesoSub3Texto2,
+            info3: idioma?.leng.procesoSub3Texto3,
+            info4: ""
+        }
+    ]
+
   const [acordeon, setAcordeon] = useState(1)  
 
   function handleClick(i) {
