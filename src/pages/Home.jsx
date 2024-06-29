@@ -47,12 +47,12 @@ function Home() {
       document.querySelectorAll("video").forEach((video) => video.addEventListener("loadeddata", () => AOS.refresh()))
     }, 1000);
   }, [location.pathname, dispatch, userLeng]);
-
+//{toggled ? "EN" : "ES"}
   return (
     <>
         <div className="contDivButonTogle">
           <div className="divButonToggle" onClick={changeToggle}>
-            <button type="button" className={`butonToggle ${toggled ? "toggleEn" : "toggleEs"}`} >{toggled ? "EN" : "ES"}</button>
+            <button type="button" className={`butonToggle`} ><span className={!toggled ? "negrita" : "nada"}>ES</span> / <span className={toggled ? "negrita" : "nada"}>EN</span></button>
           </div>
         </div>
         <Body />

@@ -19,7 +19,7 @@ function AboutUs() {
 */
   return (
     <section className='SectionNosotros'>
-        <div style={{display: "flex", justifyContent: "center", background: "#4144B8"}}>
+        <div style={{display: "flex", justifyContent: "center", background: "#443cb4"}}>
             <div className='contNosotros' data-aos="fade-up">
                 <h1 className='tituloNosotros'>{idioma?.leng.tituloNosotros}</h1>
                 <p className='parrafoServicios'>{idioma?.leng.textoNosotros1}</p>

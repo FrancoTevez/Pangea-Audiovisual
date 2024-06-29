@@ -144,7 +144,7 @@ label{
     background-color: #D9BD4C;
     border-radius: 18px;
     border: solid 1px #141538;
-    box-shadow: 0px 6px 0px #141538;
+    box-shadow: 6px 6px 0px #141538;
     color: var(--Oscuro, #141538);
     letter-spacing: 1.25px;
     transition: all .1s ease; 
@@ -154,7 +154,7 @@ label{
 }
 
 .inputEnviar:active{
-    transform: translateY(6px);
+    transform: translate(6px, 6px);
     background-color: #141538;
     color: #BFC1E0;
     box-shadow: none;

@@ -2,7 +2,7 @@
 import Banners from '../components/Banners'
 import Contacto from '../components/Contacto'
 import Portfolio from '../components/Portfolio'
-import Produccion from '../components/Produccion'
+//import Produccion from '../components/Produccion'
 import Servicios from '../components/Servicios'
 import SocialProof from '../components/SocialProof'
 import Animaciones from '../components/Animaciones'
@@ -17,7 +17,6 @@ function Body() {
         <main>
           <Servicios />
           <Animaciones />
-          <Produccion />
         </main>
         <Portfolio />
         <Contacto />

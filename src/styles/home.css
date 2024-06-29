@@ -25,16 +25,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5px;
     outline: none;
     background-color: #141538;
     height: 24px;
-    width: 24px;
+    width: 100%;
     padding: 0px 4px;
     color: #fff;
     border: 1px solid #242424;
     border-radius: 4px;
     transition: all .2s ease;
     cursor: pointer;
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+.butonToggle:active{
+    transform: scale(.9);
 }
 
 .toggleEn{
