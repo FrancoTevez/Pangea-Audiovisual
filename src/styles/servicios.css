@@ -10,20 +10,64 @@
 }
 
 .gifServicios{
-    width: 450px;
+    height: 550px;
     z-index: 10;
 }
 
+.contTituloVidServ{
+    height: 480px;
+}
+
+.btnEmpecemos{
+    justify-content: center;
+    padding: 0;
+    margin-top: 38px;
+    cursor: pointer;
+    width: 220px;
+    height: 36px;
+    background-color: #D9BD4C;
+    border-radius: 18px;
+    border: solid 1px #141538;
+    box-shadow: 6px 6px 0px #141538;
+    color: var(--Oscuro, #141538);
+    letter-spacing: 1.25px;
+    transition: all .1s ease; 
+    font-family: "Inter-Bold",sans-serif;
+    font-weight: 700;
+    margin-bottom: 9px;
+    margin-top: 40px;
+}
+
+.btnEmpecemos:active{
+    transform: translate(6px, 6px);
+    background-color: #141538;
+    color: #BFC1E0;
+    box-shadow: none;
+}
+
 .sombraServicios2{
-    width: 450px;
+    height: 550px;
     position: absolute;
     right: 5px;
 }
 
 .sombraServicios3{
-    width: 450px;
+    height: 550px;
     position: absolute;
     z-index: 4;
+    
+}
+
+.contVidServ2{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    max-width: 800px;
+    min-width: 600px;
+    margin-top: 150px;
+    position: relative;
+    margin-left: 90px;
 }
 
 .contVidServ{
@@ -33,12 +77,14 @@
     align-items: center;
     max-width: 800px;
     min-width: 600px;
-    margin-top: 70px;
+    margin-top: 150px;
     position: relative;
+    margin-right: 90px;
 }
 
 .tituloVidServ{
     color: #EAEBED;
+    font-size: 28px;
 }
 
 .pVidServ{
@@ -107,13 +153,87 @@
     .contServicios{
         top: 1px;
     }
+
+    .contParrafos{
+        gap: 70px;
+        margin-top: 120px;
+    }
+
+    .contVidServ{
+        flex-direction: column;
+        margin: 0;
+        gap: 20px;
+        min-width: 400px;
+        height: fit-content;
+    }
+
+    .sombraServicios2{
+        top: 0px;
+    }
+
+    .pVidServ{
+        max-width: 400px;
+    }
+
+    .contTituloVidServ{
+        height: fit-content;
+    }
+
+    .contVidServ2{
+        flex-direction: column-reverse;
+        margin: 0;
+        gap: 20px;
+        height: fit-content;
+        min-width: 400px;
+    }
+
+    
 }
 
 @media (max-width: 576px) {
     .contServicios{
         padding-bottom: 30px;
     }
+
+    .contParrafos{
+        margin-top: 60px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .gifServicios{
+        height: 410px;
+    }
+    .sombraServicios2{
+        height: 410px;
+    }
+    .sombraServicios3{
+        height: 410px;
+    }
     .tituloPrincipal{
         font-size: 21px;
     }
+
+    .contVidServ{
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .contVidServ2{
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .sombraServicios2{
+        top: 0;
+        right: 0px;
+    }
+
+    .tituloVidServ{
+        font-size: 20px;
+    }
+    .contTituloVidServ{
+        max-width: 90%;
+    }
+
 }

@@ -12,6 +12,7 @@ const es = {
     texto1VidSer3: "Contenido diseñado no solo para llamar la atención y mantener la retención, sino también para fomentar interacción e impulsar acciones específicas.",
     texto1Servicio: "Hablamos el idioma del diseño, animación y video, pero lo que nos hace únicos es que sabemos conectarlo con el mundo del marketing y la publicidad.",
     texto2Servicio: "Analizamos la necesidad de cada cliente para brindar soluciones reales a objetivos concretos y alcanzar resultados exitosos.",
+    textoEmpecemos: "EMPECEMOS",
     tituloMotion: "Un enfoque en Motion Grapchis eleva el éxito del contenido:",
     videosMotion: videos,
     tituloProceso: "Proceso de Producción",
