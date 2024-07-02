@@ -12,7 +12,7 @@ const en = {
     texto1VidSer3: "Our content is designed not only to grab attention and maintain retention but also to encourage interaction and drive specific actions.",
     texto1Servicio: "Fluent in the language of design, animation, and video, our uniqueness lies in seamlessly blending these skills with the dynamic realms of marketing and advertising.",
     texto2Servicio: "We meticulously analyze each client's unique needs, crafting solutions that translate into tangible success.",
-    textoEmpecemos: "EMPECEMOS",
+    textoEmpecemos: "LET'S GET STARTED",
     tituloMotion: "A focus on Motion Graphics elevates content success:",
     videosMotion: videos,
     tituloProceso: "Production Process",

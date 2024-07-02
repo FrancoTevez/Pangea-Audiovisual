@@ -60,6 +60,9 @@ body{
     .arrowBanner{
         left: 15px;
     }
+    .contArrowBanner{
+        z-index: 10;
+    }
 }
 
 @media (max-width: 576px) {
