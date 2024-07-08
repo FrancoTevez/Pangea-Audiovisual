@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 0px;
 }
 
 .contTextUbi, .contTextUbi2{
-    margin-top: 45px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -7,9 +7,10 @@
 .contFormulario{
     margin-top: 43px;
     display: flex;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 140px;
+    gap: 0px;
 }
 
 input, textarea{
@@ -187,11 +188,11 @@ label{
 @media (max-width: 1150px) {
     .formContacto{
         width: 330px;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
 
     .contFormulario{
-        gap: 35px;
+        gap: 0px;
     }
 
 }

@@ -11,8 +11,8 @@ function Contacto() {
     <div style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
       <h2 className="tituloContacto" id="contacto">{idioma?.leng.tituloContacto}</h2>
       <div className="contFormulario" data-aos="fade-up">
-        <UbiContacto />
         <Formulario />
+        <UbiContacto />
         <div className='contTextUbi2'>
           <p className='pUbi'>Córdoba, Argentina.</p>
           <p className='pUbi'>Tel: +54 9 3513 92-9046</p>

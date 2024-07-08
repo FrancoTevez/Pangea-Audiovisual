@@ -75,7 +75,7 @@ function Formulario() {
 
     const sendEmail = (e) => {
       e.preventDefault();
-      if(mailRef.current.value != "" && nombreRef.current.value != "" && textAreaRef.current.value != ""){
+      if(mailRef.current.value != "" && nombreRef.current.value != ""){
         const formEle = document.querySelector(".formContacto");
         const formData = new FormData(formEle)
         fetch("https://script.google.com/macros/s/AKfycbzJb4IvUSSLS2u9cXPCw04ZZ_czQYGdDzl2t9Vun6aVT3iYW6aioKhfLSUcJLawlvt3/exec", {
@@ -113,11 +113,10 @@ function Formulario() {
         <label htmlFor="idEmpresa">{idioma?.leng.inputEmpresa}</label>
         <input type="text" name="empresa" id="idEmpresa" ref={empresaRef} />
         <label htmlFor="mensaje">{idioma?.leng.inputMensaje}</label>
-        <textarea id="mensaje" name="message" ref={textAreaRef} className={`${yaEnvio == 1 ? campOb.message == "" ? "obligatorio" : undefined : undefined}`} value={val} onChange={(e) => {
+        <textarea id="mensaje" name="message" ref={textAreaRef} value={val} onChange={(e) => {
            handleChange(e)
            handleOb(e)
         }} />
-        <span className={`${yaEnvio == 1 ? campOb.message != "" ? "displayNone" : "TextoCampoOb" : "displayNone"}`}>{idioma?.leng.textoObligatorio}</span>
         <div className="contInputEnviar">
           <button type="submit" value="ENVIAR" className="inputEnviar">{idioma?.leng.botonEnviar}</button>
         </div>
