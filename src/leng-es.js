@@ -3,7 +3,7 @@ import { videos } from "./videosAnim"
 const es = {
     tituloPrincipal: "SERVICIOS",
     tituloVidSer1: "Diseño Creativo. Testeos",
-    texto1VidSer1: "Visuales, textos y edición llamativas y pensadas para una gran variedad de anuncios: UGC, IGC, testimoniales, value props, etc.",
+    texto1VidSer1: "Visuales, textos y edición llamativas pensadas para una gran variedad de anuncios: UGC, IGC, testimoniales, value props, etc.",
     texto2VidSer1: "Así encontramos la combinación óptima del mensaje.",
     texto3VidSer1: "Probamos y mejoramos continuamente para perfeccionar el rendimiento.",
     tituloVidSer2: "Storytelling Visual",
