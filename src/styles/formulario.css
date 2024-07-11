@@ -1,5 +1,5 @@
 .formContacto{
-    width: 508px;
+    width: 665px;
     display: flex;
     flex-direction: column;
 }
@@ -187,7 +187,6 @@ label{
 
 @media (max-width: 1150px) {
     .formContacto{
-        width: 330px;
         margin-bottom: 0px;
     }
 
